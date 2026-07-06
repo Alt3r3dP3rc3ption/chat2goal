@@ -2,7 +2,7 @@ import os
 import zipfile
 import shutil
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 
 # ---------------------------------------------------------------------------
 # PROMPT BODY
