@@ -73,4 +73,4 @@ Output zips are written to `chat2goal-dist-v4/`.
 
 ## License
 
-MIT
+Apache 2.0
