@@ -1,6 +1,7 @@
 ---
 name: chat2goal
 description: "Compiles messy chat transcripts into a rigorous, executable /goal loop prompt for agentic models like Anthropic Fable 5. Use when the user pastes a chat transcript and wants a structured initialization prompt with ROLE, CONTEXT, TASK, EXECUTION GATE, and DEFINITION OF DONE headers."
+license: Apache-2.0
 metadata:
   version: '1.0.0'
   author: chat2goal
