@@ -1,5 +1,6 @@
 # Build output
-chat2goal-dist*/
+chat2goal-dist/
+*-dist/
 __pycache__/
 *.pyc
 *.pyo

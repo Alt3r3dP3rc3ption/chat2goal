@@ -493,7 +493,8 @@ PACKAGES = {
 # BUILD
 # ---------------------------------------------------------------------------
 def create_packages():
-    output_dir = "/home/user/workspace/chat2goal-dist-v4"
+    # Use a path relative to this script so it works on any machine/CI runner
+    output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "chat2goal-dist")
     if os.path.exists(output_dir):
         shutil.rmtree(output_dir)
     os.makedirs(output_dir)

@@ -33,15 +33,15 @@ jobs:
         with:
           tag_name: ${{ github.ref_name }}
           files: |
-            chat2goal-dist*/chat2goal-all-platforms.zip
-            chat2goal-dist*/chat2goal-universal.zip
-            chat2goal-dist*/chat2goal-perplexity.zip
-            chat2goal-dist*/chat2goal-claude.zip
-            chat2goal-dist*/chat2goal-chatgpt.zip
-            chat2goal-dist*/chat2goal-gemini.zip
-            chat2goal-dist*/chat2goal-cursor.zip
-            chat2goal-dist*/chat2goal-github-copilot.zip
-            chat2goal-dist*/chat2goal-microsoft.zip
-            chat2goal-dist*/chat2goal-codex.zip
-            chat2goal-dist*/chat2goal-generic.zip
+            chat2goal-dist/chat2goal-all-platforms.zip
+            chat2goal-dist/chat2goal-universal.zip
+            chat2goal-dist/chat2goal-perplexity.zip
+            chat2goal-dist/chat2goal-claude.zip
+            chat2goal-dist/chat2goal-chatgpt.zip
+            chat2goal-dist/chat2goal-gemini.zip
+            chat2goal-dist/chat2goal-cursor.zip
+            chat2goal-dist/chat2goal-github-copilot.zip
+            chat2goal-dist/chat2goal-microsoft.zip
+            chat2goal-dist/chat2goal-codex.zip
+            chat2goal-dist/chat2goal-generic.zip
           generate_release_notes: false
