@@ -9,6 +9,7 @@ REQUIRED = {
     "chat2lazycodex/SKILL.md": "chat2lazycodex",
     "project-chat2lazycodex/SKILL.md": "project-chat2lazycodex",
     "skill-universalizer/SKILL.md": "skill-universalizer",
+    "plan-council-review/SKILL.md": "plan-council-review",
 }
 
 for rel, expected_name in REQUIRED.items():

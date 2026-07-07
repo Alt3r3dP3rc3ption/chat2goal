@@ -13,6 +13,7 @@ Invoke with: `/chat2goal`
 | [`chat2lazyCodex`](./chat2lazycodex/SKILL.md) | One chat transcript should become a LazyCodex/OMO-ready prompt. |
 | [`projectChat2lazyCodex`](./project-chat2lazycodex/SKILL.md) | Many project chats should become a LazyCodex/OMO-ready plan or execution prompt. |
 | [`skill-universalizer`](./skill-universalizer/SKILL.md) | A finished skill should be packaged into multi-platform release zips. |
+| [`plan-council-review`](./plan-council-review/SKILL.md) | A Codex plan should be reviewed by a prompt-only council before it is shown to the user. |
 
 ---
 
