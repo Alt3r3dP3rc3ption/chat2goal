@@ -4,6 +4,16 @@
 
 Invoke with: `/chat2goal`
 
+## Skills
+
+| Skill | Use when |
+|---|---|
+| [`chat2goal`](./SKILL.md) | One chat transcript should become a generic executable goal-loop prompt. |
+| [`projectChat2goal`](./project-chat2goal/SKILL.md) | Many chats from one ChatGPT/Claude/Codex/Gemini project should become one project-level goal prompt. |
+| [`chat2lazyCodex`](./chat2lazycodex/SKILL.md) | One chat transcript should become a LazyCodex/OMO-ready prompt. |
+| [`projectChat2lazyCodex`](./project-chat2lazycodex/SKILL.md) | Many project chats should become a LazyCodex/OMO-ready plan or execution prompt. |
+| [`skill-universalizer`](./skill-universalizer/SKILL.md) | A finished skill should be packaged into multi-platform release zips. |
+
 ---
 
 ## What It Does
@@ -62,6 +72,12 @@ python build.py
 ```
 
 Output zips are written to `chat2goal-dist-v4/`.
+
+Validate skill frontmatter with:
+
+```bash
+python scripts/validate_skills.py
+```
 
 ---
 
