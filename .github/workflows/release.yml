@@ -44,4 +44,5 @@ jobs:
             chat2goal-dist/chat2goal-microsoft.zip
             chat2goal-dist/chat2goal-codex.zip
             chat2goal-dist/chat2goal-generic.zip
+            chat2goal-dist/chat2goal-prompts.zip
           generate_release_notes: false

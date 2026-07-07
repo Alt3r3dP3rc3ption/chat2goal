@@ -3,7 +3,7 @@ name: plan-council-review
 description: "Runs a prompt-only Codex plan review council before presenting a plan for user review. Use when an agent has drafted a plan and wants at least five independent reviewers, optional large-plan teams, and a privacy-gated route for outside council support."
 license: Apache-2.0
 metadata:
-  version: '1.3.0'
+  version: '1.4.0'
   author: chat2goal
 ---
 

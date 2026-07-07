@@ -48,6 +48,7 @@ Download the zip for your platform from [Releases](../../releases/latest):
 | `chat2goal-microsoft.zip` | Microsoft Copilot + Copilot Studio |
 | `chat2goal-codex.zip` | OpenAI Codex / API |
 | `chat2goal-generic.zip` | Generic Python/Node.js orchestrators |
+| `chat2goal-prompts.zip` | Copy-paste prompts for chats without skill/plugin installs |
 
 ### Quick Install — Gemini CLI & Antigravity (Windows 11)
 
@@ -84,7 +85,7 @@ python scripts/validate_skills.py
 
 ## Roadmap
 
-- `v1.3.0` — **plan council + capability carryover design**: Adds the prompt-only `plan-council-review` skill, documents capability carryover, and parks inactive external-review scripts for future activation.
+- `v1.4.0` — **copy-paste prompts**: Adds four no-install prompt artifacts for chat2goal, project-chat2goal, chat2lazycodex, and project-chat2lazycodex.
 
 ---
 

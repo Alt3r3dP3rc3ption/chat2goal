@@ -3,7 +3,7 @@ name: project-chat2goal
 description: "Compiles many chats from the same AI project into one executable goal-loop prompt. Use when the source material spans ChatGPT Projects, Claude projects, Codex sessions, Gemini Gems, exports, transcripts, or pasted conversation bundles. Invocation aliases: projectChat2goal, /projectChat2goal, project-chat2goal."
 license: Apache-2.0
 metadata:
-  version: '1.3.0'
+  version: '1.4.0'
   author: chat2goal
 ---
 

@@ -2,7 +2,7 @@ import os
 import zipfile
 import shutil
 
-VERSION = "1.3.0"
+VERSION = "1.4.0"
 
 # ---------------------------------------------------------------------------
 # PROMPT BODY
@@ -54,6 +54,19 @@ with open(ROOT_SKILL_PATH, "r", encoding="utf-8") as f:
 
 parts = ROOT_SKILL_CONTENT.split("---", 2)
 STANDARD_CONTENT = parts[2].lstrip() if len(parts) == 3 else ROOT_SKILL_CONTENT
+PROMPTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "prompts")
+
+def read_prompt(name):
+    with open(os.path.join(PROMPTS_DIR, name), encoding="utf-8") as f:
+        return f.read()
+
+PROMPT_FILES = {
+    "README.md": read_prompt("README.md"),
+    "chat2goal.prompt.md": read_prompt("chat2goal.prompt.md"),
+    "project-chat2goal.prompt.md": read_prompt("project-chat2goal.prompt.md"),
+    "chat2lazycodex.prompt.md": read_prompt("chat2lazycodex.prompt.md"),
+    "project-chat2lazycodex.prompt.md": read_prompt("project-chat2lazycodex.prompt.md"),
+}
 
 # Perplexity: SKILL.md with versioned frontmatter
 PERPLEXITY_SKILL_CONTENT = ROOT_SKILL_CONTENT
@@ -170,6 +183,7 @@ Invoke with: `/chat2goal`
 | chat2goal-microsoft.zip | Microsoft Copilot, Copilot Studio |
 | chat2goal-codex.zip | OpenAI Codex / API |
 | chat2goal-generic.zip | Generic Python/Node.js Orchestrators |
+| chat2goal-prompts.zip | Copy-paste prompts for chats without skill/plugin installs |
 
 ## Installation by Platform
 
@@ -215,6 +229,11 @@ Invoke with: `/chat2goal`
 
 **Generic Orchestrators**
 1. Use `generic_orchestrator/chat2goal_system_prompt.md` in your agent definitions.
+
+**Copy-Paste Prompts**
+1. Extract `chat2goal-prompts.zip`.
+2. Open `README.md`.
+3. Copy the prompt that matches your input shape into any chat that supports long prompts.
 """
 
 README_GEMINI = f"""# chat2goal v{VERSION} — Gemini & Antigravity CLI Installation
@@ -482,6 +501,11 @@ PACKAGES = {
         "files": {
             "chat2goal_system_prompt.md": STANDARD_CONTENT,
         },
+        "scripts": None,
+    },
+    "chat2goal-prompts": {
+        "readme": PROMPT_FILES["README.md"],
+        "files": PROMPT_FILES,
         "scripts": None,
     },
 }
