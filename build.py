@@ -2,7 +2,7 @@ import os
 import zipfile
 import shutil
 
-VERSION = "1.1.0"
+VERSION = "1.2.1"
 
 # ---------------------------------------------------------------------------
 # PROMPT BODY
@@ -48,31 +48,28 @@ When the user gives the approval to proceed, the autonomous loop will be managed
 ```
 """
 
-STANDARD_CONTENT = PROMPT_BODY
+ROOT_SKILL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "SKILL.md")
+with open(ROOT_SKILL_PATH, "r", encoding="utf-8") as f:
+    ROOT_SKILL_CONTENT = f.read()
+
+parts = ROOT_SKILL_CONTENT.split("---", 2)
+STANDARD_CONTENT = parts[2].lstrip() if len(parts) == 3 else ROOT_SKILL_CONTENT
 
 # Perplexity: SKILL.md with versioned frontmatter
-PERPLEXITY_SKILL_CONTENT = f"""---
-name: chat2goal
-description: "Compiles messy chat transcripts into a rigorous, executable /goal loop prompt for agentic models like Anthropic Fable 5. Use when the user pastes a chat transcript and wants a structured initialization prompt with ROLE, CONTEXT, TASK, EXECUTION GATE, and DEFINITION OF DONE headers."
-license: Apache-2.0
-metadata:
-  version: '{VERSION}'
-  author: chat2goal
----
-""" + PROMPT_BODY
+PERPLEXITY_SKILL_CONTENT = ROOT_SKILL_CONTENT
 
 # GitHub Copilot
 GITHUB_COPILOT_CONTENT = f"""---
-description: "Compiles messy chat transcripts into a rigorous, executable /goal loop prompt for Anthropic's Fable 5. v{VERSION}"
+description: "Compiles messy chat transcripts into rigorous, executable goal-loop prompts for agentic coding models. v{VERSION}"
 ---
-""" + PROMPT_BODY
+""" + STANDARD_CONTENT
 
 # Cursor
 CURSOR_CONTENT = f"""---
-description: "Compiles messy chat transcripts into a rigorous, executable /goal loop prompt for Anthropic's Fable 5. Invoke with /chat2goal. v{VERSION}"
+description: "Compiles messy chat transcripts into rigorous, executable goal-loop prompts for agentic coding models. Invoke with /chat2goal. v{VERSION}"
 alwaysApply: false
 ---
-""" + PROMPT_BODY
+""" + STANDARD_CONTENT
 
 # ---------------------------------------------------------------------------
 # INSTALL SCRIPTS

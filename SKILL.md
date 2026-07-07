@@ -3,7 +3,7 @@ name: chat2goal
 description: "Compiles one messy chat transcript into a rigorous, executable goal-loop prompt for agentic coding models. Use when the user pastes a single chat and wants a structured initialization prompt with ROLE, CONTEXT, TASK, EXECUTION GATE, and DEFINITION OF DONE headers. For multiple chats from one AI project use projectChat2goal/project-chat2goal; for LazyCodex/OMO workflows use chat2lazyCodex or projectChat2lazyCodex."
 license: Apache-2.0
 metadata:
-  version: '1.1.0'
+  version: '1.2.1'
   author: chat2goal
 ---
 [SYSTEM ROLE]

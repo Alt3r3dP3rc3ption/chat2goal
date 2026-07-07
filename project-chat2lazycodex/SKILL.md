@@ -3,7 +3,7 @@ name: project-chat2lazycodex
 description: "Compiles many chats from one AI project into a LazyCodex/OMO-ready plan or execution prompt. Use for ChatGPT/Claude/Codex/Gemini project chat bundles that should become $init-deep, $ulw-plan, $start-work, or $ulw-loop work with evidence, project memory, and Codex-native subagent instructions. Invocation aliases: projectChat2lazyCodex, /projectChat2lazyCodex."
 license: Apache-2.0
 metadata:
-  version: '1.0.0'
+  version: '1.2.1'
   author: chat2goal
 ---
 

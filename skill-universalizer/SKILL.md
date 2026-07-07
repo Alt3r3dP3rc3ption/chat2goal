@@ -3,7 +3,7 @@ name: skill-universalizer
 description: "Takes any SKILL.md file or .skill.zip and packages it into a multi-platform distribution with platform-specific zips for Perplexity, Claude, ChatGPT, Gemini CLI, Antigravity CLI, Cursor, GitHub Copilot, Microsoft Copilot, OpenAI Codex, and generic orchestrators. Use when the user has a finished skill and wants to distribute it across all major AI platforms. Triggers on phrases like 'package my skill', 'make it universal', 'distribute this skill', 'create platform zips', or when a SKILL.md or .skill.zip is provided."
 license: Apache-2.0
 metadata:
-  version: '1.1.0'
+  version: '1.2.1'
   author: chat2goal
 ---
 

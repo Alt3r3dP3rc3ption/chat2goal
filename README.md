@@ -71,7 +71,7 @@ Requires Python 3.8+. No dependencies.
 python build.py
 ```
 
-Output zips are written to `chat2goal-dist-v4/`.
+Output zips are written to `chat2goal-dist/`.
 
 Validate skill frontmatter with:
 
@@ -83,7 +83,7 @@ python scripts/validate_skills.py
 
 ## Roadmap
 
-- `v1.1.0` — **skill-universalizer**: A companion skill + build script that takes any `SKILL.md` or `.skill.zip` and packages it into the same multi-platform distribution format used here.
+- `v1.2.1` — **project + LazyCodex variants**: Adds project-level and LazyCodex/OMO-ready chat2goal skills, plus keeps release zips sourced from the canonical root skill.
 
 ---
 

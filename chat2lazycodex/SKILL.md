@@ -3,7 +3,7 @@ name: chat2lazycodex
 description: "Converts one messy chat transcript into a LazyCodex/OMO-ready work prompt. Use when a single chat should become a prompt for LazyCodex commands such as $init-deep, $ulw-plan, $start-work, or $ulw-loop, with evidence gates and Codex-native subagent wording. Invocation aliases: chat2lazyCodex, /chat2lazyCodex."
 license: Apache-2.0
 metadata:
-  version: '1.0.0'
+  version: '1.2.1'
   author: chat2goal
 ---
 
