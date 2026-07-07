@@ -84,7 +84,7 @@ python scripts/validate_skills.py
 
 ## Roadmap
 
-- `v1.2.1` — **project + LazyCodex variants**: Adds project-level and LazyCodex/OMO-ready chat2goal skills, plus keeps release zips sourced from the canonical root skill.
+- `v1.3.0` — **plan council + capability carryover design**: Adds the prompt-only `plan-council-review` skill, documents capability carryover, and parks inactive external-review scripts for future activation.
 
 ---
 
